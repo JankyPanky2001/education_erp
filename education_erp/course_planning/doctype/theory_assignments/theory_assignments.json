@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 22:59:41.843569",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "theory_assignment",
+  "department_name",
+  "academic_year",
+  "academic_term",
+  "class_and_division",
+  "course_name",
+  "course_outcome",
+  "blooms_taxonomy_level_btl",
+  "assignment_number",
+  "unit_name",
+  "assignment_title"
+ ],
+ "fields": [
+  {
+   "fieldname": "theory_assignment",
+   "fieldtype": "Link",
+   "label": "Theory Assignment",
+   "options": "Type Theory Assignment"
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class_and_division",
+   "fieldtype": "Data",
+   "label": "Class and Division "
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course Details"
+  },
+  {
+   "fetch_from": "course_name.course_outcomes",
+   "fieldname": "course_outcome",
+   "fieldtype": "Data",
+   "label": "Course Outcome"
+  },
+  {
+   "fieldname": "blooms_taxonomy_level_btl",
+   "fieldtype": "Data",
+   "label": "Bloom's Taxonomy Level (BTL)"
+  },
+  {
+   "fieldname": "assignment_number",
+   "fieldtype": "Data",
+   "label": "Assignment Number"
+  },
+  {
+   "fieldname": "assignment_title",
+   "fieldtype": "Data",
+   "label": "Assignment Title"
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Table MultiSelect",
+   "label": "Unit Name",
+   "options": "Course Unit Detail Child Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 15:57:05.743624",
+ "modified_by": "Administrator",
+ "module": "Course Planning",
+ "name": "Theory Assignments",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

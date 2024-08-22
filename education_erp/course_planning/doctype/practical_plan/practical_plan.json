@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{course_name}-{experiment__assignment_title}-{####}",
+ "creation": "2024-08-07 12:08:52.372007",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "academic_year",
+  "division_and_batch",
+  "course_name",
+  "column_break_dcxd",
+  "program_name",
+  "academic_term",
+  "faculty_name",
+  "course_code",
+  "section_break_nejv",
+  "experiment__assignment_title",
+  "resource_code",
+  "author_name",
+  "edition",
+  "column_break_tllu",
+  "planned__execution_date",
+  "book_name",
+  "publisher_name",
+  "page_references"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "division_and_batch",
+   "fieldtype": "Data",
+   "label": "Division and Batch"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "column_break_dcxd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Link",
+   "label": "Program Name",
+   "options": "Program"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "fetch_from": "course_name.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "section_break_nejv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "experiment__assignment_title",
+   "fieldtype": "Data",
+   "label": "Experiment / Assignment Title  "
+  },
+  {
+   "fieldname": "resource_code",
+   "fieldtype": "Select",
+   "label": "Resource Code",
+   "options": "\nText Books\nReference Books\nDigital Content\nVirtual Lab"
+  },
+  {
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "label": "Author Name"
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Data",
+   "label": "Edition"
+  },
+  {
+   "fieldname": "column_break_tllu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planned__execution_date",
+   "fieldtype": "Date",
+   "label": "Planned / Execution Date"
+  },
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "label": "Book Name"
+  },
+  {
+   "fieldname": "publisher_name",
+   "fieldtype": "Data",
+   "label": "Publisher Name"
+  },
+  {
+   "fieldname": "page_references",
+   "fieldtype": "Attach",
+   "label": "Page References"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 22:02:26.056804",
+ "modified_by": "Administrator",
+ "module": "Course Planning",
+ "name": "Practical Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "experiment__assignment_title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

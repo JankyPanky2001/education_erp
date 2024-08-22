@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 11:28:14.080160",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_title",
+  "unit_number",
+  "unit_duration",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fetch_from": "unit_title.unit_number",
+   "fieldname": "unit_number",
+   "fieldtype": "Data",
+   "label": "Unit Number"
+  },
+  {
+   "fieldname": "unit_title",
+   "fieldtype": "Link",
+   "label": "Unit Title",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "unit_duration",
+   "fieldtype": "Data",
+   "label": "Unit Duration"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-21 16:30:10.060237",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Course Unit Detail Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

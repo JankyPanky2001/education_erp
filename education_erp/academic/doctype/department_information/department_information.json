@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 09:33:46.087152",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "institute",
+  "department",
+  "column_break_lpdp",
+  "academic_infrastructure",
+  "student_faculty_ratio_including_fe",
+  "student_faculty_ratio_excluding_fe",
+  "faculty_list_section",
+  "faculty",
+  "program_educational_objectives_section",
+  "peo",
+  "program_outcomes_section",
+  "po",
+  "program_specific__outcome_section",
+  "pso",
+  "department_vision_and_mission_section",
+  "vision_statement",
+  "mission_statements"
+ ],
+ "fields": [
+  {
+   "fieldname": "institute",
+   "fieldtype": "Link",
+   "label": "Institute",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_infrastructure",
+   "fieldtype": "Data",
+   "label": "Academic Infrastructure"
+  },
+  {
+   "fieldname": "vision_statement",
+   "fieldtype": "Text Editor",
+   "label": "Vision Statement"
+  },
+  {
+   "fieldname": "mission_statements",
+   "fieldtype": "Text Editor",
+   "label": "Mission Statements"
+  },
+  {
+   "fieldname": "column_break_lpdp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "department_vision_and_mission_section",
+   "fieldtype": "Section Break",
+   "label": "Department Vision and Mission"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "faculty_list_section",
+   "fieldtype": "Section Break",
+   "label": "Faculty List"
+  },
+  {
+   "fieldname": "faculty",
+   "fieldtype": "Table",
+   "label": "Faculty",
+   "options": "Child Table Faculty Information"
+  },
+  {
+   "fieldname": "student_faculty_ratio_including_fe",
+   "fieldtype": "Data",
+   "label": "Student Faculty Ratio (including FE)"
+  },
+  {
+   "fieldname": "student_faculty_ratio_excluding_fe",
+   "fieldtype": "Data",
+   "label": "Student Faculty Ratio (excluding FE)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "program_educational_objectives_section",
+   "fieldtype": "Section Break",
+   "label": "Program Educational Objectives"
+  },
+  {
+   "columns": 2,
+   "fieldname": "peo",
+   "fieldtype": "Table",
+   "label": "PEO",
+   "options": "Program Educational Objectives"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "program_outcomes_section",
+   "fieldtype": "Section Break",
+   "label": "Program Outcomes"
+  },
+  {
+   "columns": 2,
+   "fieldname": "po",
+   "fieldtype": "Table",
+   "label": "PO",
+   "options": "Program Outcomes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "program_specific__outcome_section",
+   "fieldtype": "Section Break",
+   "label": "Program Specific  Outcome"
+  },
+  {
+   "fieldname": "pso",
+   "fieldtype": "Table",
+   "label": "PSO",
+   "options": "Program Specific  Outcome"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-05 11:18:45.150514",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Department Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

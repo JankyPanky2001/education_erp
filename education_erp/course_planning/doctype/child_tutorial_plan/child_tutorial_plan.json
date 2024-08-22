@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 22:28:23.711860",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tutorial_id",
+  "tutorial_name",
+  "tutorial_number",
+  "planned_date",
+  "execution_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "tutorial_id",
+   "fieldtype": "Link",
+   "label": "Tutorial Id",
+   "options": "Tutorial  Plan"
+  },
+  {
+   "fieldname": "tutorial_name",
+   "fieldtype": "Data",
+   "label": "Tutorial Name"
+  },
+  {
+   "fieldname": "tutorial_number",
+   "fieldtype": "Data",
+   "label": "Tutorial Number"
+  },
+  {
+   "fieldname": "planned_date",
+   "fieldtype": "Date",
+   "label": "Planned Date"
+  },
+  {
+   "fieldname": "execution_date",
+   "fieldtype": "Date",
+   "label": "Execution Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-21 22:49:29.054482",
+ "modified_by": "Administrator",
+ "module": "Course Planning",
+ "name": "Child Tutorial Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

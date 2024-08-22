@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 14:21:59.870299",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_outcome",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_outcome",
+   "fieldtype": "Data",
+   "label": "Course Outcome"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-05 14:22:29.692373",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Course Outcome Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 16:02:34.456495",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "academic_year",
+  "course",
+  "class_and_division",
+  "lecture_number",
+  "activity",
+  "column_break_qjhk",
+  "program",
+  "academic_term",
+  "course_code",
+  "faculty_name",
+  "datetime",
+  "unit_covered"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class_and_division",
+   "fieldtype": "Data",
+   "label": "Class and Division "
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "course.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "lecture_number",
+   "fieldtype": "Data",
+   "label": "Lecture Number"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "unit_covered",
+   "fieldtype": "Link",
+   "label": "Unit Covered",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "column_break_qjhk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 00:34:39.641372",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Slow Learner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

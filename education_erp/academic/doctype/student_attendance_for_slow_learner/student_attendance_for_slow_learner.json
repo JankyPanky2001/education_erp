@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-14 09:56:07.108476",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "department",
+  "academic_term",
+  "lecture_number",
+  "topics_covered",
+  "column_break_hgmy",
+  "program",
+  "course_name",
+  "lecture_date",
+  "justification",
+  "column_break_jimj",
+  "academic_year",
+  "course_code",
+  "class",
+  "student_signature",
+  "student_list_section",
+  "slow_learner_students"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "course_name.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "lecture_number",
+   "fieldtype": "Data",
+   "label": "Lecture Number"
+  },
+  {
+   "fieldname": "lecture_date",
+   "fieldtype": "Date",
+   "label": "Lecture Date"
+  },
+  {
+   "fieldname": "student_signature",
+   "fieldtype": "Attach",
+   "label": "Student Signature"
+  },
+  {
+   "fieldname": "topics_covered",
+   "fieldtype": "Data",
+   "label": "Topics Covered"
+  },
+  {
+   "fieldname": "justification",
+   "fieldtype": "Data",
+   "label": "Justification"
+  },
+  {
+   "fieldname": "column_break_hgmy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jimj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_list_section",
+   "fieldtype": "Section Break",
+   "label": "Students List"
+  },
+  {
+   "fieldname": "slow_learner_students",
+   "fieldtype": "Table",
+   "label": "Slow Learner Students",
+   "options": "Child table Student"
+  },
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 13:08:18.948520",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Student Attendance for Slow Learner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

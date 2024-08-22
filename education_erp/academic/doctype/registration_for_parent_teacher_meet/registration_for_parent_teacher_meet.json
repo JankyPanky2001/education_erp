@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 10:46:10.431767",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "academic_year",
+  "academic_term",
+  "meeting_date_and_time",
+  "name_of_student",
+  "name_of_parentguardian",
+  "relation",
+  "column_break_gzdc",
+  "class",
+  "contact_no",
+  "email_id",
+  "parent_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "meeting_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Meeting Date and time"
+  },
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Link",
+   "label": "Name of Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "name_of_parentguardian",
+   "fieldtype": "Data",
+   "label": "Name of Parent/Guardian"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "label": "Relation"
+  },
+  {
+   "fieldname": "column_break_gzdc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No."
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID  "
+  },
+  {
+   "fieldname": "parent_signature",
+   "fieldtype": "Attach",
+   "label": "Parent Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-20 10:50:02.283899",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Registration for Parent Teacher Meet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

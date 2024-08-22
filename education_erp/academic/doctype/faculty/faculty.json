@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:user_id",
+ "creation": "2024-08-05 09:12:25.211405",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "designation",
+  "qualification",
+  "date_of_joining",
+  "date_on_which_designated_as_profesor__associate_professor",
+  "mode_of_employment",
+  "column_break_rugg",
+  "faculty_name",
+  "area_of_specialization",
+  "income_tax_pan",
+  "nature_of_employment",
+  "program",
+  "institute"
+ ],
+ "fields": [
+  {
+   "fetch_from": "user_id.full_name",
+   "fieldname": "faculty_name",
+   "fieldtype": "Data",
+   "label": "Faculty Name"
+  },
+  {
+   "fieldname": "income_tax_pan",
+   "fieldtype": "Data",
+   "label": "Income Tax PAN"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification "
+  },
+  {
+   "fieldname": "area_of_specialization",
+   "fieldtype": "Data",
+   "label": "Area of Specialization"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation "
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "date_on_which_designated_as_profesor__associate_professor",
+   "fieldtype": "Date",
+   "label": "Date on which Designated as Profesor / Associate Professor"
+  },
+  {
+   "fieldname": "nature_of_employment",
+   "fieldtype": "Data",
+   "label": "Nature of Employment"
+  },
+  {
+   "fieldname": "mode_of_employment",
+   "fieldtype": "Data",
+   "label": "Mode of Employment"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_rugg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "institute",
+   "fieldtype": "Link",
+   "label": "Institute",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-05 09:43:12.324451",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Faculty",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

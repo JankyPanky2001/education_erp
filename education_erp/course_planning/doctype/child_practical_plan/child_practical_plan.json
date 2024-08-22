@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 21:58:18.260037",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "practical_id",
+  "practical_title"
+ ],
+ "fields": [
+  {
+   "fieldname": "practical_id",
+   "fieldtype": "Link",
+   "label": "Practical Id",
+   "options": "Practical Plan"
+  },
+  {
+   "fetch_from": "practical_id.experiment__assignment_title",
+   "fieldname": "practical_title",
+   "fieldtype": "Data",
+   "label": "Practical Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-21 22:04:04.096642",
+ "modified_by": "Administrator",
+ "module": "Course Planning",
+ "name": "Child Practical Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

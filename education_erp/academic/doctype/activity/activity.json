@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-14 09:37:38.204617",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event",
+  "academic_year",
+  "course_code",
+  "event_name",
+  "date",
+  "student_signature",
+  "resource_person_signature",
+  "column_break_zghb",
+  "department",
+  "academic_term",
+  "event_coordinator",
+  "name_of_resource_person",
+  "session_number",
+  "event_coordinator_signature",
+  "column_break_wwqd",
+  "class",
+  "course",
+  "event_coordinator_name",
+  "name_of_student",
+  "total_students_present",
+  "name_and_address_of_organization",
+  "tab_2_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "course.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event",
+   "options": "Student Event"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "event_coordinator",
+   "fieldtype": "Link",
+   "label": "Event Coordinator",
+   "options": "User"
+  },
+  {
+   "fetch_from": "event_coordinator.full_name",
+   "fieldname": "event_coordinator_name",
+   "fieldtype": "Data",
+   "label": "Event Coordinator Name"
+  },
+  {
+   "fieldname": "name_of_resource_person",
+   "fieldtype": "Data",
+   "label": "Name of Resource Person"
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name"
+  },
+  {
+   "fieldname": "name_and_address_of_organization",
+   "fieldtype": "Small Text",
+   "label": "Name and Address of Organization"
+  },
+  {
+   "fieldname": "event_coordinator_signature",
+   "fieldtype": "Attach",
+   "label": "Event Coordinator Signature"
+  },
+  {
+   "fieldname": "resource_person_signature",
+   "fieldtype": "Attach",
+   "label": "Resource Person Signature"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "session_number",
+   "fieldtype": "Data",
+   "label": "Session Number"
+  },
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Link",
+   "label": "Name of Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "student_signature",
+   "fieldtype": "Attach",
+   "label": "Student Signature"
+  },
+  {
+   "fieldname": "total_students_present",
+   "fieldtype": "Data",
+   "label": "Total Students Present"
+  },
+  {
+   "fieldname": "column_break_zghb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wwqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-14 09:55:19.723159",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

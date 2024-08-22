@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 10:37:32.844762",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_specific__outcome",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_specific__outcome",
+   "fieldtype": "Data",
+   "label": "Program Specific  Outcome"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-05 10:38:19.917205",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Program Specific  Outcome",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

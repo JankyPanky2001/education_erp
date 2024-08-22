@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-06 13:27:11.058421",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "academic_term",
+  "class_and_division",
+  "student_name",
+  "student_signature",
+  "column_break_botc",
+  "program",
+  "academic_year",
+  "student_roll_no",
+  "electives_opted"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class_and_division",
+   "fieldtype": "Data",
+   "label": "Class and Division"
+  },
+  {
+   "fieldname": "student_roll_no",
+   "fieldtype": "Link",
+   "label": "Student Roll No.",
+   "options": "Student"
+  },
+  {
+   "fetch_from": "student_roll_no.student_name",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name"
+  },
+  {
+   "fieldname": "electives_opted",
+   "fieldtype": "Table MultiSelect",
+   "label": "Elective/s Opted",
+   "options": "Course Child Table"
+  },
+  {
+   "fieldname": "column_break_botc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "student_signature",
+   "fieldtype": "Attach",
+   "label": "Student Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-06 14:33:15.406777",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Elective Subject",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 12:17:02.982100",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_student",
+  "exam_seat_number",
+  "theory_marks",
+  "practical_marks",
+  "tw_marks",
+  "total_marks",
+  "total_mark_100"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Link",
+   "label": "Name of Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "exam_seat_number",
+   "fieldtype": "Data",
+   "label": "Exam Seat Number"
+  },
+  {
+   "fieldname": "theory_marks",
+   "fieldtype": "Data",
+   "label": "Theory Marks"
+  },
+  {
+   "fieldname": "practical_marks",
+   "fieldtype": "Data",
+   "label": "Practical Marks"
+  },
+  {
+   "fieldname": "tw_marks",
+   "fieldtype": "Data",
+   "label": "TW Marks"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Data",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "total_mark_100",
+   "fieldtype": "Data",
+   "label": "Total Marks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-20 12:24:41.411686",
+ "modified_by": "Administrator",
+ "module": "CO PO Attainment",
+ "name": "University Result",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

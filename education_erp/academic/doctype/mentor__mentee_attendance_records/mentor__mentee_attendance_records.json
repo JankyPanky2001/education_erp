@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-14 09:25:06.481991",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "program",
+  "academic_year",
+  "academic_term",
+  "class",
+  "meeting_week_no",
+  "student_name",
+  "student_id",
+  "mentor_name",
+  "date",
+  "activity__points_discussed"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "meeting_week_no",
+   "fieldtype": "Data",
+   "label": "Meeting/ Week No."
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Link",
+   "label": "Student Name",
+   "options": "Student"
+  },
+  {
+   "fetch_from": "student_name.user",
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "label": "Student Id"
+  },
+  {
+   "fieldname": "mentor_name",
+   "fieldtype": "Data",
+   "label": "Mentor Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "activity__points_discussed",
+   "fieldtype": "Small Text",
+   "label": "Activity / Points Discussed"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 13:43:57.676116",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Mentor  Mentee Attendance Records",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

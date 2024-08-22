@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 13:27:25.274963",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "course_name",
+  "academic_term",
+  "credits",
+  "program",
+  "pre_requisite_courses",
+  "column_break_wqnm",
+  "course_code",
+  "course_pattern",
+  "teaching_scheme",
+  "engaged_by",
+  "companion_courses",
+  "course_outcomes",
+  "course_unit_detail_section",
+  "course_unit_detail",
+  "practical_section",
+  "practical_detail",
+  "section_break_fraw",
+  "tutorial_detail",
+  "overview_tab",
+  "group_structure",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name ",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "course_name.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fetch_from": "course_name.custom_course_pattern",
+   "fieldname": "course_pattern",
+   "fieldtype": "Data",
+   "label": "Course Pattern"
+  },
+  {
+   "fieldname": "teaching_scheme",
+   "fieldtype": "Data",
+   "label": "Teaching Scheme"
+  },
+  {
+   "fieldname": "credits",
+   "fieldtype": "Data",
+   "label": "Credits"
+  },
+  {
+   "fieldname": "engaged_by",
+   "fieldtype": "Link",
+   "label": "Engaged by",
+   "options": "Department"
+  },
+  {
+   "fieldname": "pre_requisite_courses",
+   "fieldtype": "Data",
+   "label": "Pre-requisite Courses"
+  },
+  {
+   "fieldname": "companion_courses",
+   "fieldtype": "Data",
+   "label": "Companion Courses"
+  },
+  {
+   "fieldname": "column_break_wqnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "course_unit_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "course_unit_detail",
+   "fieldtype": "Table",
+   "label": "Course Unit Detail",
+   "options": "Course Unit Detail Child Table"
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "course_outcomes",
+   "fieldtype": "Data",
+   "label": "Course Outcomes "
+  },
+  {
+   "fieldname": "group_structure",
+   "fieldtype": "Small Text",
+   "label": "Group Structure"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "practical_section",
+   "fieldtype": "Section Break",
+   "label": "Practical"
+  },
+  {
+   "fieldname": "practical_detail",
+   "fieldtype": "Table",
+   "label": "Practical Detail",
+   "options": "Child Practical Plan"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_fraw",
+   "fieldtype": "Section Break",
+   "label": "Tutorial"
+  },
+  {
+   "fieldname": "tutorial_detail",
+   "fieldtype": "Table",
+   "label": "Tutorial Detail",
+   "options": "Child Tutorial Plan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 23:04:04.025865",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Course Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

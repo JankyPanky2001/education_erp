@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 11:33:35.842021",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "instructions",
+  "duration",
+  "column_break_dteb",
+  "maximum_marks",
+  "time_of_exam",
+  "section_break_gxqk",
+  "question"
+ ],
+ "fields": [
+  {
+   "fieldname": "instructions",
+   "fieldtype": "Data",
+   "label": "Instructions"
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Table",
+   "label": "Question",
+   "options": "Question Child Table"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "column_break_dteb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_marks",
+   "fieldtype": "Data",
+   "label": "Maximum Marks"
+  },
+  {
+   "fieldname": "time_of_exam",
+   "fieldtype": "Datetime",
+   "label": "Time of Exam"
+  },
+  {
+   "fieldname": "section_break_gxqk",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 11:38:51.263005",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Class Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-08-05 14:08:35.886377",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "academic_year",
+  "course_name",
+  "user",
+  "column_break_ymcl",
+  "program",
+  "academic_term",
+  "course_code",
+  "faculty_name",
+  "course_education_objective_section",
+  "course_education_objective",
+  "course_outcome_details_section",
+  "course_outcome_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "column_break_ymcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fetch_from": "course_name.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "course_education_objective_section",
+   "fieldtype": "Section Break",
+   "label": "Course Education Objective"
+  },
+  {
+   "fieldname": "course_education_objective",
+   "fieldtype": "Table",
+   "label": "Course Education Objective",
+   "options": "Course Education Objective"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "course_outcome_details_section",
+   "fieldtype": "Section Break",
+   "label": "Course Outcome Details"
+  },
+  {
+   "fieldname": "course_outcome_details",
+   "fieldtype": "Table",
+   "label": "Course Outcome Details",
+   "options": "Course Outcome Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 15:32:54.253885",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Course ceo and co",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

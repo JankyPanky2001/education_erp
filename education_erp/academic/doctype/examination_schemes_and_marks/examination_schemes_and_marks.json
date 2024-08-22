@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 11:44:18.414631",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "insem_exam",
+  "practical",
+  "oral",
+  "ia_i",
+  "audit",
+  "column_break_oxvz",
+  "endsem_exam",
+  "term_work",
+  "internal_assessment",
+  "ia_ii",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "insem_exam",
+   "fieldtype": "Data",
+   "label": "In-Semester Exam "
+  },
+  {
+   "fieldname": "practical",
+   "fieldtype": "Data",
+   "label": "Practical"
+  },
+  {
+   "fieldname": "oral",
+   "fieldtype": "Data",
+   "label": "Oral"
+  },
+  {
+   "fieldname": "ia_i",
+   "fieldtype": "Data",
+   "label": "IA I"
+  },
+  {
+   "fieldname": "audit",
+   "fieldtype": "Select",
+   "label": "Audit",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "column_break_oxvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "endsem_exam",
+   "fieldtype": "Data",
+   "label": "End-Semester Exam"
+  },
+  {
+   "fieldname": "term_work",
+   "fieldtype": "Data",
+   "label": "Term Work"
+  },
+  {
+   "fieldname": "internal_assessment",
+   "fieldtype": "Data",
+   "label": " Internal Assessment  "
+  },
+  {
+   "fieldname": "ia_ii",
+   "fieldtype": "Data",
+   "label": "IA II"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 11:51:22.676048",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Examination Schemes and Marks",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

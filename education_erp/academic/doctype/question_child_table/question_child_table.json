@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 11:36:17.050817",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question_number",
+  "sub_question_number",
+  "question",
+  "unitmodule_no",
+  "marks_for_each_question"
+ ],
+ "fields": [
+  {
+   "fieldname": "question_number",
+   "fieldtype": "Data",
+   "label": "Question Number"
+  },
+  {
+   "fieldname": "sub_question_number",
+   "fieldtype": "Data",
+   "label": "Sub Question Number"
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Small Text",
+   "label": "Question"
+  },
+  {
+   "fieldname": "unitmodule_no",
+   "fieldtype": "Data",
+   "label": "Unit/Module No"
+  },
+  {
+   "fieldname": "marks_for_each_question",
+   "fieldtype": "Data",
+   "label": "Marks for Each Question "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-07 11:37:36.126675",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Question Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 14:57:53.423663",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "academic_year",
+  "class_and_division",
+  "course_name",
+  "assignment_title",
+  "unit",
+  "column_break_scuw",
+  "program_name",
+  "academic_term",
+  "btl",
+  "course_code",
+  "assignment_number",
+  "course_outcome_details_section",
+  "course_outcome"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "column_break_scuw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Link",
+   "label": "Program Name",
+   "options": "Program"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class_and_division",
+   "fieldtype": "Link",
+   "label": "Class and Division",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "assignment_title",
+   "fieldtype": "Data",
+   "label": "Assignment Title"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "btl",
+   "fieldtype": "Data",
+   "label": "BTL"
+  },
+  {
+   "fieldname": "assignment_number",
+   "fieldtype": "Data",
+   "label": "Assignment Number"
+  },
+  {
+   "fieldname": "course_outcome_details_section",
+   "fieldtype": "Section Break",
+   "label": "Course Outcome Details"
+  },
+  {
+   "fieldname": "course_outcome",
+   "fieldtype": "Table",
+   "label": "Course Outcome ",
+   "options": "Course Outcome Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 15:51:54.763926",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Practical Assignments",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

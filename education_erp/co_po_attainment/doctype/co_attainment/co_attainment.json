@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 11:38:21.373140",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "co_attainment_type",
+  "department",
+  "academic_term",
+  "course_name",
+  "class",
+  "average_university_result",
+  "goal_level",
+  "attainment_level",
+  "column_break_zbvh",
+  "academic_year",
+  "pattern",
+  "course_code",
+  "goal_set",
+  "faculty_name",
+  "average",
+  "section_break_zxkx",
+  "student"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "pattern",
+   "fieldtype": "Data",
+   "label": "Pattern"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "average_university_result",
+   "fieldtype": "Select",
+   "label": "Average University Result",
+   "options": "\nCAYm1\nCAYm2\nCAYm3"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Data",
+   "label": "Average"
+  },
+  {
+   "fieldname": "goal_set",
+   "fieldtype": "Data",
+   "label": "Goal Set"
+  },
+  {
+   "fieldname": "goal_level",
+   "fieldtype": "Select",
+   "label": "Goal Level",
+   "options": "\nL1\nL2\nL3\nL4\nL5"
+  },
+  {
+   "fieldname": "attainment_level",
+   "fieldtype": "Data",
+   "label": "Attainment Level"
+  },
+  {
+   "fieldname": "column_break_zbvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Table",
+   "label": "Student",
+   "options": "University Result"
+  },
+  {
+   "fieldname": "co_attainment_type",
+   "fieldtype": "Link",
+   "label": "Co Attainment Type",
+   "options": "CO Attainment Type"
+  },
+  {
+   "fieldname": "section_break_zxkx",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-20 12:25:48.683884",
+ "modified_by": "Administrator",
+ "module": "CO PO Attainment",
+ "name": "CO Attainment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

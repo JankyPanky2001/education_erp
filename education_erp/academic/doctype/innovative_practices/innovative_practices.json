@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-13 10:17:47.146580",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "academic_year",
+  "course",
+  "innovative_practice",
+  "student_id",
+  "name_of_faculty",
+  "photos",
+  "column_break_eimm",
+  "class_and_division",
+  "academic_term",
+  "course_code",
+  "student_name",
+  "student_signature",
+  "activity",
+  "proofs"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class_and_division",
+   "fieldtype": "Data",
+   "label": "Class and Division "
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "course.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "innovative_practice",
+   "fieldtype": "Select",
+   "label": "Innovative Practice",
+   "options": "\nFlip Classroom\nPeer Learning\nQuiz"
+  },
+  {
+   "fieldname": "column_break_eimm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Link",
+   "label": "Student Name",
+   "options": "Student"
+  },
+  {
+   "fetch_from": "student_name.user",
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "label": "Student Id"
+  },
+  {
+   "fieldname": "name_of_faculty",
+   "fieldtype": "Link",
+   "label": "Name of Faculty",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "student_signature",
+   "fieldtype": "Attach",
+   "label": "Student Signature"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Attach",
+   "label": "Photos"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "proofs",
+   "fieldtype": "Attach",
+   "label": "Proofs"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-13 10:58:56.214643",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Innovative Practices",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

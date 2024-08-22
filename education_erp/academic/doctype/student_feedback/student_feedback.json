@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-14 10:19:58.785034",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "list_of__questions_for_feedback_1",
+  "list_of_questions_for_feedback_2",
+  "feedback_number",
+  "feedback_date",
+  "faculty_name",
+  "academic_year",
+  "academic_term",
+  "course",
+  "course_code",
+  "faculty_score",
+  "program",
+  "column_break_euql",
+  "class__division",
+  "total_number_of_students",
+  "_of_syllabus_completed",
+  "sessions_delivered_by_faculty_in_the_semester",
+  "average_sessions_attended_by_the_students_in_the_semester",
+  "course_type",
+  "mode_of_teaching",
+  "number_of_students_participated",
+  "category__attribute",
+  "feedback_particulars",
+  "tab_2_tab",
+  "division_average",
+  "performance_difference",
+  "feedback_average",
+  "column_break_rwzm",
+  "faculty_average_considering_all_attributes",
+  "appreciable_performance_in_attributes",
+  "need_to_works_on_attribute",
+  "average_value_of_attribute",
+  "attribute_wise_division_average"
+ ],
+ "fields": [
+  {
+   "fieldname": "list_of__questions_for_feedback_1",
+   "fieldtype": "Data",
+   "label": "List of  Questions for Feedback 1"
+  },
+  {
+   "fieldname": "list_of_questions_for_feedback_2",
+   "fieldtype": "Data",
+   "label": "List of Questions for Feedback 2"
+  },
+  {
+   "fieldname": "feedback_number",
+   "fieldtype": "Data",
+   "label": "Feedback Number"
+  },
+  {
+   "fieldname": "feedback_date",
+   "fieldtype": "Date",
+   "label": "Feedback Date"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  },
+  {
+   "fetch_from": "course.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "faculty_score",
+   "fieldtype": "Rating",
+   "label": "Faculty Score "
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "column_break_euql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "class__division",
+   "fieldtype": "Data",
+   "label": "Class / Division"
+  },
+  {
+   "fieldname": "total_number_of_students",
+   "fieldtype": "Data",
+   "label": "Total Number of Students"
+  },
+  {
+   "fieldname": "_of_syllabus_completed",
+   "fieldtype": "Data",
+   "label": "% of Syllabus Completed"
+  },
+  {
+   "fieldname": "sessions_delivered_by_faculty_in_the_semester",
+   "fieldtype": "Data",
+   "label": "Sessions delivered by Faculty in the Semester"
+  },
+  {
+   "fieldname": "average_sessions_attended_by_the_students_in_the_semester",
+   "fieldtype": "Data",
+   "label": "Average Sessions attended by the Students in the Semester"
+  },
+  {
+   "fieldname": "course_type",
+   "fieldtype": "Data",
+   "label": "Course Type"
+  },
+  {
+   "fieldname": "mode_of_teaching",
+   "fieldtype": "Select",
+   "label": "Mode of Teaching",
+   "options": "\nOnline\nOffline"
+  },
+  {
+   "fieldname": "number_of_students_participated",
+   "fieldtype": "Data",
+   "label": "Number of Students Participated"
+  },
+  {
+   "fieldname": "category__attribute",
+   "fieldtype": "Data",
+   "label": "Category / Attribute"
+  },
+  {
+   "fieldname": "feedback_particulars",
+   "fieldtype": "Small Text",
+   "label": "Feedback Particulars"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "division_average",
+   "fieldtype": "Data",
+   "label": "Division Average"
+  },
+  {
+   "fieldname": "performance_difference",
+   "fieldtype": "Data",
+   "label": "Performance Difference"
+  },
+  {
+   "fieldname": "feedback_average",
+   "fieldtype": "Data",
+   "label": "Feedback Average"
+  },
+  {
+   "fieldname": "column_break_rwzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "faculty_average_considering_all_attributes",
+   "fieldtype": "Data",
+   "label": "Faculty average considering all attributes"
+  },
+  {
+   "fieldname": "appreciable_performance_in_attributes",
+   "fieldtype": "Data",
+   "label": "Appreciable Performance in attributes"
+  },
+  {
+   "fieldname": "need_to_works_on_attribute",
+   "fieldtype": "Data",
+   "label": "Need to works on attribute"
+  },
+  {
+   "fieldname": "average_value_of_attribute",
+   "fieldtype": "Data",
+   "label": "Average value of Attribute"
+  },
+  {
+   "fieldname": "attribute_wise_division_average",
+   "fieldtype": "Data",
+   "label": "Attribute wise Division Average"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-14 10:36:14.279768",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Student Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

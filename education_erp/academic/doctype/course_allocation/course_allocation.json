@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-06 12:39:08.146294",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "academic_year",
+  "course_name",
+  "faculty_signature",
+  "column_break_smxi",
+  "program",
+  "academic_term",
+  "course_code",
+  "theory",
+  "practical",
+  "tutorial",
+  "tab_break_freg",
+  "teaching_hours_engaged",
+  "total_teaching_hours_allocated",
+  "theory_hours__week",
+  "practical_hours__week",
+  "teaching_hours_other_department",
+  "column_break_boux",
+  "teaching_hours",
+  "no_of_divisions",
+  "no_of_practical_batches",
+  "number_of_times_course_taught"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "no_of_divisions",
+   "fieldtype": "Data",
+   "label": "No. of Divisions"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "theory_hours__week",
+   "fieldtype": "Data",
+   "label": "Theory Hours / Week"
+  },
+  {
+   "default": "0",
+   "fieldname": "tutorial",
+   "fieldtype": "Check",
+   "label": "Tutorial"
+  },
+  {
+   "fieldname": "practical_hours__week",
+   "fieldtype": "Data",
+   "label": "Practical Hours / Week"
+  },
+  {
+   "fieldname": "no_of_practical_batches",
+   "fieldtype": "Data",
+   "label": "No. of Practical Batches"
+  },
+  {
+   "fieldname": "teaching_hours",
+   "fieldtype": "Data",
+   "label": "Total teaching hours of the department faculty"
+  },
+  {
+   "fieldname": "teaching_hours_engaged",
+   "fieldtype": "Data",
+   "label": "Teaching hours to be engaged by other departments"
+  },
+  {
+   "fieldname": "teaching_hours_other_department",
+   "fieldtype": "Data",
+   "label": "Teaching hours of other departments to be engaged by department "
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "column_break_smxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "course_name.custom_course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "number_of_times_course_taught",
+   "fieldtype": "Data",
+   "label": "Number of times course taught"
+  },
+  {
+   "fieldname": "faculty_signature",
+   "fieldtype": "Attach",
+   "label": "Faculty Signature"
+  },
+  {
+   "default": "0",
+   "fieldname": "theory",
+   "fieldtype": "Check",
+   "label": "Theory"
+  },
+  {
+   "default": "0",
+   "fieldname": "practical",
+   "fieldtype": "Check",
+   "label": "Practical"
+  },
+  {
+   "fieldname": "total_teaching_hours_allocated",
+   "fieldtype": "Data",
+   "label": "Total teaching hours allocated"
+  },
+  {
+   "fieldname": "tab_break_freg",
+   "fieldtype": "Tab Break"
+  },
+  {
+   "fieldname": "column_break_boux",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-20 17:57:24.992095",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Course Allocation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

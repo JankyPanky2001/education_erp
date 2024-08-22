@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{course_name}-{tutorial_title}-{tutorial_no}",
+ "creation": "2024-08-07 12:43:40.836231",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "academic_year",
+  "division_and_batch",
+  "faculty_name",
+  "tutorial_title",
+  "course_outcome",
+  "resource_type",
+  "publisher_name",
+  "edition",
+  "column_break_fygh",
+  "program",
+  "academic_term",
+  "course_name",
+  "tutorial_no",
+  "planned_date",
+  "execution_date",
+  "book_name",
+  "author_name",
+  "page_references__web_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "division_and_batch",
+   "fieldtype": "Data",
+   "label": "Division and Batch"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "tutorial_title",
+   "fieldtype": "Data",
+   "label": "Tutorial Title  "
+  },
+  {
+   "fieldname": "course_outcome",
+   "fieldtype": "Data",
+   "label": "Course Outcome"
+  },
+  {
+   "fieldname": "resource_type",
+   "fieldtype": "Select",
+   "label": "Resource Type",
+   "options": "\nTextbooks\nReference Books\nMOOC\nNPTEL Courses\nVirtual Lab Links\nPBL"
+  },
+  {
+   "fieldname": "publisher_name",
+   "fieldtype": "Data",
+   "label": "Publisher Name"
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Data",
+   "label": "Edition"
+  },
+  {
+   "fieldname": "column_break_fygh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "tutorial_no",
+   "fieldtype": "Data",
+   "label": "Tutorial No."
+  },
+  {
+   "fieldname": "planned_date",
+   "fieldtype": "Date",
+   "label": "Planned Date"
+  },
+  {
+   "fieldname": "execution_date",
+   "fieldtype": "Date",
+   "label": "Execution Date"
+  },
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "label": "Book Name"
+  },
+  {
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "label": "Author Name"
+  },
+  {
+   "fieldname": "page_references__web_link",
+   "fieldtype": "Attach",
+   "label": "Page References / Web link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 22:50:18.697782",
+ "modified_by": "Administrator",
+ "module": "Course Planning",
+ "name": "Tutorial  Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tutorial_title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

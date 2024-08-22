@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-07 13:23:54.202933",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "program",
+  "academic_year",
+  "academic_term",
+  "class_or_division",
+  "course_name",
+  "course_code",
+  "teaching_scheme",
+  "batch",
+  "date",
+  "period",
+  "faculty_name",
+  "no_of_thpr_planned",
+  "no_of_thpr_taken",
+  "_syllabus_covered",
+  "faculty_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "class_or_division",
+   "fieldtype": "Data",
+   "label": "Class or Division"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
+   "label": "Course Name",
+   "options": "Course"
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "teaching_scheme",
+   "fieldtype": "Data",
+   "label": "Teaching Scheme"
+  },
+  {
+   "fieldname": "batch",
+   "fieldtype": "Data",
+   "label": "Batch"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Link",
+   "label": "Faculty Name",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "no_of_thpr_planned",
+   "fieldtype": "Data",
+   "label": "No. of TH/PR planned"
+  },
+  {
+   "fieldname": "no_of_thpr_taken",
+   "fieldtype": "Data",
+   "label": "No. of TH/PR taken"
+  },
+  {
+   "fieldname": "_syllabus_covered",
+   "fieldtype": "Data",
+   "label": "% Syllabus covered"
+  },
+  {
+   "fieldname": "faculty_signature",
+   "fieldtype": "Attach",
+   "label": "Faculty Signature"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 10:08:20.301990",
+ "modified_by": "Administrator",
+ "module": "Academic",
+ "name": "Syllabus Coverage Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
